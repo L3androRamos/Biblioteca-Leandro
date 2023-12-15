@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Usuários de Biblioteca</title>
+        <script src = "js/usuario.js"> </script>
+    </head>
+    <body>
+        <h1>Usuarios da Biblioteca</h1>
+        <script>
+            (async function(){
+                var usuario = new Usuario();
+                var usuarios = await usuario.buscarTodos();
+            })();
+        </script>
+    </body>
+</html>
